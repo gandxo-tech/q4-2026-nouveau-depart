@@ -14,7 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='10' fill='%23FF8B94'/%3E%3Cpath d='M9 21a7 7 0 0114 0' fill='none' stroke='%23fff' stroke-width='3' stroke-linecap='round'/%3E%3Ccircle cx='16' cy='10' r='3' fill='%23fff'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap">
 <link rel="preload" as="image" href="img/hero.webp" fetchpriority="high">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Store", "name": "Nouveau Départ", "description": "Tenez vos bonnes résolutions 2027 : planners, journaux, tapis de yoga, kits bien-être. Tournez la roue des résolutions et relevez le défi 21 jours. Livraison à Cotonou.", "address": {"@type": "PostalAddress", "addressLocality": "Cotonou", "addressCountry": "BJ"}, "currenciesAccepted": "XOF", "paymentAccepted": "Mobile Money, paiement à la livraison"}, {"@type": "ItemList", "itemListElement": [{"@type": "ListItem", "position": 1, "item": {"@type": "Product", "name": "Planner 2027 « Un jour à la fois »", "image": "img/planner.webp", "description": "Vue annuelle, mensuelle et hebdo, suivi d'habitudes et bilans trimestriels. Couverture lin, 240 pages.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.8, "reviewCount": 612}, "offers": {"@type": "Offer", "price": "9900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 2, "item": {"@type": "Product", "name": "Journal de gratitude 90 jours", "image": "img/journal.webp", "description": "3 minutes le matin, 2 minutes le soir. Des questions simples pour finir chaque journée en paix.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 421}, "offers": {"@type": "Offer", "price": "5900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 3, "item": {"@type": "Product", "name": "Tapis de yoga antidérapant 6 mm", "image": "img/tapis-yoga.webp", "description": "TPE écologique, double face, sangle de transport. Programme de 10 séances vidéo offert.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 356}, "offers": {"@type": "Offer", "price": "14900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 4, "item": {"@type": "Product", "name": "Gourde de motivation 1 L", "image": "img/gourde-motivation.webp", "description": "Graduations horaires « encore 3 verres, tu gères ». Sans BPA, paille amovible.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.6, "reviewCount": 538}, "offers": {"@type": "Offer", "price": "6900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 5, "item": {"@type": "Product", "name": "Bandes élastiques (lot de 5)", "image": "img/bandes.webp", "description": "5 résistances, du débutant au confirmé. Tient dans un sac : faites du sport à la maison, sans salle.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.7, "reviewCount": 289}, "offers": {"@type": "Offer", "price": "8900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 6, "item": {"@type": "Product", "name": "Kit bien-être « Pause »", "image": "img/kit-bienetre.webp", "description": "Bougie, infusion citronnelle-gingembre, huile de massage au karité et masque de nuit. Pour ralentir.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.8, "reviewCount": 174}, "offers": {"@type": "Offer", "price": "27900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}, {"@type": "ListItem", "position": 7, "item": {"@type": "Product", "name": "Kit Nouveau Départ", "image": "", "description": "Planner 2027, journal de gratitude, tapis de yoga et gourde de motivation. Tout pour démarrer l'année du bon pied.", "aggregateRating": {"@type": "AggregateRating", "ratingValue": 4.9, "reviewCount": 132}, "offers": {"@type": "Offer", "price": "29900", "priceCurrency": "XOF", "availability": "https://schema.org/InStock", "priceValidUntil": "2027-01-31"}}}]}]}</script>
 <style>
@@ -230,10 +230,8 @@ p{margin:0 0 1em}
 .news input{flex:1;min-width:0;border:1.5px solid var(--line-strong,var(--line));border-radius:12px;background:var(--bg);padding:.75rem 1rem;outline:none}
 .news input:focus{border-color:var(--acc)}
 
-/* reveal animations */
-.rv{opacity:0;transform:translateY(28px);transition:opacity .7s cubic-bezier(.16,1,.3,1),transform .7s cubic-bezier(.16,1,.3,1)}
-.rv.in{opacity:1;transform:none}
-@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}.rv{opacity:1;transform:none}}
+/* reveal animations - fully visible by default for stability */
+.rv{opacity:1;transform:none}
 
 /* ===== thème nouveau-depart ===== */
 :root{--bg:#FFFFFF;--sec:#2D3436;--acc:#FF8B94;--acc-text:#C9434F;--on-acc:#2D3436;--mint:#A8E6CF;--fg:#2D3436;--muted:#636E72;--surface:#F7FAF9;--line:#E8EEEC;--line-strong:#D0DAD6;
@@ -282,7 +280,7 @@ p{margin:0 0 1em}
 .dd b{font-family:var(--fd);font-size:1rem;color:var(--muted)}
 .dd span{font-size:.82rem;line-height:1.3;color:var(--fg)}
 .dd:hover{border-color:var(--mint);transform:translateY(-2px);box-shadow:0 8px 20px -8px rgba(0,0,0,.1)}
-.dd.ok{background:var(--mint);border-color:var(--mint)}.dd.ok b{color:var(--sec)}.dd.ok b::after{content:"&nbsp;✓"}
+.dd.ok{background:var(--mint);border-color:var(--mint)}.dd.ok b{color:var(--sec)}.dd.ok b::after{content:" ✓"}
 .review{background:var(--surface);border:1px solid var(--line)}
 .shop-hero{padding:1.5rem 0 0}.shop-hero h1{font-size:clamp(2.4rem,5.5vw,3.6rem)}
 .ftr{background:var(--surface)}
@@ -291,7 +289,7 @@ p{margin:0 0 1em}
 </head>
 <body>
 <a class="skip" href="#main">Aller au contenu</a>
-<div class="promo" role="region" aria-label="Offre en cours"><span>✨ –10&nbsp;% avec la roue des résolutions</span><span class="dm">&middot;</span><span class="dm">Livraison offerte dès 20&nbsp;000&nbsp;FCFA à Cotonou, Calavi &amp; Porto-Novo</span></div>
+<div class="promo" role="region" aria-label="Offre en cours"><span>–10&nbsp;% avec la roue des résolutions</span><span class="dm">&middot;</span><span class="dm">Livraison offerte dès 20&nbsp;000&nbsp;FCFA à Cotonou, Calavi &amp; Porto-Novo</span></div>
 <header class="hdr"><div class="wrap">
 <a class="logo" href="#/" aria-label="Nouveau Départ, accueil"><svg viewBox="0 0 40 40" aria-hidden="true"><rect width="40" height="40" rx="12" fill="#A8E6CF"/><path d="M10 27a10 10 0 0120 0" fill="none" stroke="var(--sec)" stroke-width="3.4" stroke-linecap="round"/><circle cx="20" cy="12" r="4" fill="var(--acc)"/></svg><span>nouveau<span style="color:var(--acc)">.</span>départ</span></a>
 <nav class="nav" aria-label="Navigation principale"><a href="#roue">La roue</a><a href="#defi">Défi 21&nbsp;jours</a><a href="#/boutique">La boutique</a><a href="#/boutique/kits">Kits</a></nav>
@@ -301,7 +299,7 @@ p{margin:0 0 1em}
 <div data-view="home">
 <section class="hero"><div class="wrap hero-in">
  <div>
-  <span class="tag">Nouvel An 2027&nbsp;&middot;&nbsp;Cotonou</span>
+  <span class="tag">Nouvel An 2027 &middot; Cotonou</span>
   <h1>Cette année,<br>on <span class="u">tient</span> ses<br>résolutions&nbsp;!</h1>
   <p class="lead">La plupart des bonnes résolutions s'essoufflent avant février. Les nôtres tiennent, grâce à de petits objets bien pensés et un défi de 21&nbsp;jours ancré dans votre quotidien.</p>
   <div class="hero-cta"><a class="btn btn-acc" href="#roue">Tourner la roue (–10&nbsp;%)</a><a class="btn btn-ghost" href="#/boutique">Explorer la boutique</a></div>
@@ -330,11 +328,11 @@ p{margin:0 0 1em}
 </div></section>
 
 <section class="sec"><div class="wrap">
- <div class="sec-h rv"><div><span class="eyebrow">Ils ont tenu leurs engagements</span><h2>4,8/5&nbsp;&middot;&nbsp;2 390 avis vérifiés</h2></div></div>
+ <div class="sec-h rv"><div><span class="eyebrow">Ils ont tenu leurs engagements</span><h2>4,8/5 &middot; 2 390 avis vérifiés</h2></div></div>
  <div class="reviews rv">
-  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;Premier planner que je remplis jusqu'en décembre. Le suivi d'habitudes change tout.&nbsp;»</p><footer>Rébecca&nbsp;&middot;&nbsp;Cotonou</footer></figure>
-  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;Le défi 21&nbsp;jours avec les bandes élastiques&nbsp;: j'ai tenu, et j'ai continué à la maison.&nbsp;»</p><footer>Hervé&nbsp;&middot;&nbsp;Porto-Novo</footer></figure>
-  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;La gourde qui me rappelle de boire toute la journée, c'est bête mais ça marche vraiment.&nbsp;»</p><footer>Chantal&nbsp;&middot;&nbsp;Abomey-Calavi</footer></figure>
+  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;Premier planner que je remplis jusqu'en décembre. Le suivi d'habitudes change tout.&nbsp;»</p><footer>Rébecca &middot; Cotonou</footer></figure>
+  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;Le défi 21&nbsp;jours avec les bandes élastiques&nbsp;: j'ai tenu, et j'ai continué à la maison.&nbsp;»</p><footer>Hervé &middot; Porto-Novo</footer></figure>
+  <figure class="review"><span class="stars">★★★★★</span><p>«&nbsp;La gourde qui me rappelle de boire toute la journée, c'est bête mais ça marche vraiment.&nbsp;»</p><footer>Chantal &middot; Abomey-Calavi</footer></figure>
  </div>
 </div></section>
 
@@ -403,15 +401,16 @@ products:[
 init(){
  const W=document.getElementById('wheel');if(W){const ids=['tapis-yoga','planner','gourde-motivation','journal','kit-bienetre','bandes'],cols=['#FF8B94','#A8E6CF','#FFD3B6','#DCEDC1','#FFAAA5','#C7CEEA'];
   W.style.background=`conic-gradient(${ids.map((_,i)=>`${cols[i]} ${i*60}deg ${(i+1)*60}deg`).join(',')})`;
-  W.innerHTML=ids.map((id,i)=>`<span class="seg" style="--a:${i*60+30}deg"><em>${Q4.P[id].res}</em></span>`).join('');
+  W.innerHTML=ids.map((id,i)=>`<span class="seg" style="--a:${i*60+30}deg"><em>${Q4.P[id] ? Q4.P[id].res : ''}</em></span>`).join('');
   let rot=0,busy=false;const btn=document.getElementById('spin'),out=document.getElementById('wheel-res');
   btn.addEventListener('click',()=>{if(busy)return;busy=true;const k=Math.floor(Math.random()*6),target=360-(k*60+30);rot+=360*5+((target-rot%360)+360)%360;W.style.transform=`rotate(${rot}deg)`;btn.disabled=true;
    setTimeout(()=>{const p=Q4.P[ids[k]];out.innerHTML=`<p class="r-k">Votre résolution 2027</p><h3>${p.res}</h3><div class="r-p"><img src="${p.img}" alt="" width="90" height="90"><div><b>${p.name}</b><span>${Q4.fcfa(p.price)}</span></div></div><p>Code <b>DEPART10</b>&nbsp;: –10&nbsp;% sur votre commande.</p><div class="r-b"><button class="btn btn-acc" data-add="${p.id}">Ajouter et commencer</button><button class="btn btn-ghost" data-copy="DEPART10">Copier le code</button></div>`;out.hidden=false;busy=false;btn.disabled=false;btn.textContent='Relancer la roue'},matchMedia('(prefers-reduced-motion: reduce)').matches?50:4200)});}
  const D=document.getElementById('defi-grid');if(D){const K='nd-defi';let done=[];try{done=JSON.parse(localStorage.getItem(K))||[]}catch(e){}
   const tips=['Boire 2&nbsp;L d\'eau','10&nbsp;min de marche','Écrire 3&nbsp;gratitudes','Ranger un tiroir','Pas d\'écran après 22&nbsp;h','15&nbsp;min d\'étirements','Cuisiner maison','Appeler un proche','Lire 10&nbsp;pages','Se coucher avant 23&nbsp;h','20&nbsp;squats','Planifier la semaine','Un repas sans sucre','Méditer 5&nbsp;min','Marcher 5&nbsp;000&nbsp;pas','Désencombrer le tél.','Dire merci 3&nbsp;fois','30&nbsp;min sans écran','Bandes&nbsp;: 3&nbsp;séries','Bilan de la semaine','Célébrer&nbsp;: 21&nbsp;jours'];
   const draw=()=>{D.innerHTML=tips.map((t,i)=>`<button class="dd ${done.includes(i)?'ok':''}" data-dd="${i}" aria-pressed="${done.includes(i)}"><b>J${i+1}</b><span>${t}</span></button>`).join('');const n=done.length;
-   document.getElementById('defi-n').textContent=n;document.getElementById('defi-bar').style.width=(n/21*100)+'%';
-   document.getElementById('defi-msg').innerHTML=n>=21?'Bravo, défi 21&nbsp;jours terminé. Votre code&nbsp;: <b>DEFI21</b> (–15&nbsp;%). <button class="btn btn-acc btn-sm" data-copy="DEFI21">Copier le code</button>':n>=7?'Une semaine tenue. Continuez, un code –15&nbsp;% vous attend au jour 21.':'Cochez chaque jour réussi. Au jour 21, un code –15&nbsp;% se débloque automatiquement.'};
+   const defiN = document.getElementById('defi-n'); if(defiN) defiN.textContent=n;
+   const defiBar = document.getElementById('defi-bar'); if(defiBar) defiBar.style.width=(n/21*100)+'%';
+   const defiMsg = document.getElementById('defi-msg'); if(defiMsg) defiMsg.innerHTML=n>=21?'Bravo, défi 21&nbsp;jours terminé. Votre code&nbsp;: <b>DEFI21</b> (–15&nbsp;%). <button class="btn btn-acc btn-sm" data-copy="DEFI21">Copier le code</button>':n>=7?'Une semaine tenue. Continuez, un code –15&nbsp;% vous attend au jour 21.':'Cochez chaque jour réussi. Au jour 21, un code –15&nbsp;% se débloque automatiquement.'};
   D.addEventListener('click',e=>{const b=e.target.closest('[data-dd]');if(!b)return;const i=+b.dataset.dd;done=done.includes(i)?done.filter(x=>x!==i):[...done,i];localStorage.setItem(K,JSON.stringify(done));draw()});draw();}
 }};
 </script>
@@ -545,8 +544,8 @@ function renderCart(){
  if(!cart.length){b.innerHTML=`<div class="empty">${IC.bag.replace('<svg','<svg width="48" height="48" style="margin:0 auto 1rem;opacity:.5"')}<p><b>Votre panier est vide.</b></p><p>${S.emptyCart||'Découvrez nos offres du moment.'}</p><a class="btn btn-acc" href="#/boutique" data-close>Explorer la boutique</a></div>`;f.hidden=true;return}
  f.hidden=false;
  const s=sub(),free=S.freeShip,left=Math.max(0,free-s),ship=left?S.shipFee:0,disc=code?Math.round(s*code.pct/100):0;
- b.innerHTML=(!free?`<div class="ship"><span>${S.noShipText||'Aucun frais de livraison'}</span></div>`:`<div class="ship">${left?`<span>Plus que <b>${fcfa(left)}</b> pour la livraison offerte</span>`:`<span>Livraison offerte débloquée 🚚</span>`}<div class="bar"><i style="width:${Math.min(100,s/free*100)}%"></i></div></div>`)+
- cart.map((l,i)=>{const p=P[l.id];return `<div class="line"><img src="${p.img||P[p.combo[0]].img}" alt="" width="72" height="72"><div><h4>${esc(p.name)}</h4>${l.opt?`<div class="muted" style="font-size:.82rem">${esc(l.opt)}</div>`:''}<div class="qty" style="margin-top:.4rem"><button data-cq="${i}" data-d="-1" aria-label="Moins">−</button><output>${l.qty}</output><button data-cq="${i}" data-d="1" aria-label="Plus">+</button></div></div><div style="text-align:right"><b class="tnum">${fcfa(p.price*l.qty)}</b><br><button class="rm" data-rm="${i}">Retirer</button></div></div>`}).join('');
+ b.innerHTML=(!free?`<div class="ship"><span>${S.noShipText||'Aucun frais de livraison'}</span></div>`:`<div class="ship">${left?`<span>Plus que <b>${fcfa(left)}</b> pour la livraison offerte</span>`:`<span>Livraison offerte débloquée</span>`}<div class="bar"><i style="width:${Math.min(100,s/free*100)}%"></i></div></div>`)+
+ cart.map((l,i)=>{const p=P[l.id];const imgSrc = p.img || (p.combo && P[p.combo[0]] ? P[p.combo[0]].img : '');return `<div class="line"><img src="${imgSrc}" alt="" width="72" height="72"><div><h4>${esc(p.name)}</h4>${l.opt?`<div class="muted" style="font-size:.82rem">${esc(l.opt)}</div>`:''}<div class="qty" style="margin-top:.4rem"><button data-cq="${i}" data-d="-1" aria-label="Moins">−</button><output>${l.qty}</output><button data-cq="${i}" data-d="1" aria-label="Plus">+</button></div></div><div style="text-align:right"><b class="tnum">${fcfa(p.price*l.qty)}</b><br><button class="rm" data-rm="${i}">Retirer</button></div></div>`}).join('');
  f.innerHTML=`<div class="code-row"><input id="code" placeholder="Code promo" aria-label="Code promo" value="${code?code.c:''}"><button class="btn btn-ghost btn-sm" data-code>Appliquer</button></div>
  <div class="tot"><span>Sous-total</span><span class="tnum">${fcfa(s)}</span></div>
  ${disc?`<div class="tot" style="color:var(--acc-text,var(--acc))"><span>Code ${code.c} (–${code.pct}&nbsp;%)</span><span class="tnum">−${fcfa(disc)}</span></div>`:''}
@@ -595,14 +594,10 @@ function route(){
  if(v!=='product')$('.sticky-buy').classList.remove('show');
  closeCart(); window.scrollTo(0,0);
  const hh=$(`[data-view="${v}"] h1`); if(hh&&v!=='home'){hh.setAttribute('tabindex','-1');hh.focus({preventScroll:true})}
- S.onRoute&&S.onRoute(v,arg); reveal();
+ S.onRoute&&S.onRoute(v,arg);
 }
 function show(v){$$('[data-view]').forEach(s=>s.hidden=s.dataset.view!==v);document.body.classList.toggle('on-pdp',v==='product')}
 addEventListener('hashchange',route);
-
-let io; function reveal(){ if(!('IntersectionObserver' in window)){$$('.rv').forEach(e=>e.classList.add('in'));return}
- io=io||new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{rootMargin:'0px 0px -8% 0px'});
- $$('.rv:not(.in)').forEach(e=>io.observe(e)); }
 
 addEventListener('scroll',()=>{const b=$('[data-add-cur]:not(.sticky-buy *)');const sb=$('.sticky-buy');if(!b||!document.body.classList.contains('on-pdp'))return;const r=b.getBoundingClientRect();sb.classList.toggle('show',r.bottom<0||r.top>innerHeight)},{passive:true});
 
