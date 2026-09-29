@@ -1,0 +1,8 @@
+{
+  "name": "Nouveau Départ",
+  "description": "Tenez vos bonnes résolutions 2027 : planners, journaux, tapis de yoga, kits bien-être. Tournez la roue des résolutions et relevez le défi 21 jours. Livraison à Cotonou.",
+  "permissions": [],
+  "capabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
